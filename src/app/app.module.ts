@@ -9,6 +9,8 @@ import { LoansComponent } from './loans/loans.component';
 import { ViewContactComponent } from './contacts/view-contact/view-contact.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoanTypesComponent } from './loan-types/loan-types.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LoansComponent,
     ViewContactComponent,
     ClientsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoanTypesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

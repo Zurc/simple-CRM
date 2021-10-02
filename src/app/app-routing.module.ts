@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { ClientsComponent } from './clients/clients.component';
 import { ViewContactComponent } from './contacts/view-contact/view-contact.component';
+import { LoanTypesComponent } from './loan-types/loan-types.component';
 import { LoansComponent } from './loans/loans.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'loans',
     component: LoansComponent,
+  },
+  {
+    path: 'loan-types',
+    component: LoanTypesComponent,
   },
   {
     path: 'contact',
