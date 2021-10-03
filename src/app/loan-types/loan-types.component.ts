@@ -61,8 +61,20 @@ export class LoanTypesComponent implements OnInit {
   }
 
   addLoanType() {
-    console.log(this.addLoanTypesForm.value);
-    
+    /**
+     * Different ways to get data from reactive forms
+     * 
+     * -Get entire form in one go
+     *    this.addLoanTypesForm.value
+     * 
+     * -Get a specific form control
+     *    this.addLoanTypesForm.get('loanType').value
+     * 
+     * -valueChanges (Observable)
+     *    -> subscribe
+     */
+
+    console.log(this.addLoanTypesForm.value);    
   }
 
 }
